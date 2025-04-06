@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #e7750c;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+
+  header h1{
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav{
+    background-color: #e7750c;
+    padding: 1rem;
+    display: flex;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav a:hover{
+    color: white;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+/* Estilizando o main */
+h1, h2,#footer, nav a{
+    font-family: "Lancelot", serif;
+  }
+
+  p, td{
+    font-family: "quicksand", serif;
+  }
+h3{
+    font-family: "quicksand";
+}
+main{
+    padding: 0rem 5rem;
+}
+
+main h2{
+  padding: 2em;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center ;
+}
+
+#sec2, #sec3{
+  margin-bottom: 10rem;
+}
+
+main #hero{
+    text-align: center;
+    position: relative;
+  }
+  
+  main #hero div{
+      position: absolute;
+      background-color: #262320be;
+      border-radius: 1em;
+      padding: 0.5em;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 1em;
+      width: 31%;
+      left: 8%;
+      top: 15%;
+  }
+
+  #hero div a{
+    padding: 0.7em;
+    text-decoration: none;
+    font-family: "quicksand";
+    background-color: white;
+    border-radius: 0.8em;
+    color: black;
+}
+
+#hero div p{
+  color: #e7750c;
+    font-weight: 900;
+}
+
+#hero div a:hover{
+    transform: scale(1.1);
+    color: #e7750c;
+}
+  
+  #hero div h1{
+      font-size: 3.5em;
+      color: white;
+      font-family: 'Lancelot', serif;
+  }
+
+  /* estilizando a section 2 */
+  #sec2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+}
+
+#sec2 div h3{
+    text-align: center;
+    color: #e7750c;
+    padding: 1em;
+    background-color: black;
+}
+
+#tracks{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    background-color: #b35d0c68;
+}
+.track{
+    position: relative;
+}
+
+.track button{
+    position:absolute;
+    top: 80%;
+    left: 40%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    color: black;
+    font-weight: bold;
+    background-color: #e7750c;
+}
+
+.track button:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+  #weatherF{
+    background-color: #b35d0c68;
+    padding-bottom: 0;
+}
+
+#weatherF p{
+padding: 0.5em;
+font-size: 1.3em;
+}
+
+#weatherF span{
+  color: black;
+  font-weight: 900;
+}
+
+#sec3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+#sec3 div h3{
+  text-align: center;
+  color: #e7750c;
+  padding: 1em;
+  background-color: black;
+}
+#karts{
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  background-color: #b35d0c68;
+}
+
+.kartdesc{
+  width: 200px;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse; /* Remove o espaço entre as células */
+  background-color: #e7760c51;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.3em;
+}
+
+th{
+  background-color: #ecedec;
+  font-family: 'Roboto';
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff4e;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7880c7e;
+}
+
+/* Estilização do Modal */
+#myModal div{
+  display: flex;
+  gap: 10em;
+  }
+  
+  #myModal{
+      padding: 0.5em;
+      background-color: #1E1D1D;
+  }
+  
+  #myModal ul{
+      font-weight: bold;
+      color: white;
+  }
+  
+  #myModal div h2{
+      color: #e7750c;
+      margin: 0;
+      padding: 1em;
+  }
+  
+  #myModal::backdrop{
+      background-color: #e7760c51;
+  }
+  
+  #myModal button{
+      border: none;
+      background: none;
+      font-size: 1.5em;
+      color:#e7750c;
+  }
+  
+  main dialog{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  } 
+
+/* Estilizando o footer */
+footer{
+    background-color: #e7750c;
+    padding: 2.1em;
+    text-align: center;
+  }
+  
+  footer #footer{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    font-size: large;
+    color: black;
+  }
+  
+  footer #lastModified{
+    color: black;
+  }
+
+  @media(min-width: 800px) and (max-width: 1200px){
+    /* Estilizando a hero div */
+
+
+    main #hero div{
+      top: 8%;
+  }
+
+    #hero div a{
+      padding: 0.3em;
+  }
+  
+  #hero div p{
+    font-size: 0.8em;
+  }
+    
+    #hero div h1{
+        font-size: 1.8em;
+    }
+
+     /* estilizando a sec2 */
+     #sec2{
+      grid-template-columns:1fr;
+      gap: 5em;
+  }
+
+  #tracks{
+    flex-direction: column;
+}
+
+  #tracks img{
+    margin-left: 23%;
+  }
+
+
+    /* estilizando a sec3 */
+    #sec3{
+      grid-template-columns:1fr;
+      gap: 5em;
+    }
+
+    #karts{
+      flex-direction: column;
+    }
+
+    #karts img{
+      margin-left: 23%;
+    }
+    
+    .kartdesc{
+      width: 100%;
+      height: 100%;
+    }
+
+    table{
+      width: 100%;
+    }
+  }
+
+  @media(min-width: 300px) and (max-width:800px){
+    header{
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav{
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 1em;
+  } 
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+  } 
+
+  .nav-links.active{
+    display: flex;
+  } 
+
+    .nav-links {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+  }  
+
+  .nav-links a{
+    font-size: 1.2em;
+  }
+
+    main {
+      padding: 0rem;
+  }
+
+  main h2{
+    padding: 2em;
+    font-size: 2rem;
+    margin-top: 12rem;
+    text-align: center ;
+  }
+
+
+      /* Estilizando a hero div */
+
+      main #hero div{
+        top: 100%;
+        width: 85%;
+        background-color: #1E1D1D;
+    }
+  
+    
+    #hero div p{
+      font-size: 0.8em;
+    }
+      
+      #hero div h1{
+          font-size: 1.8em;
+      }
+  
+       /* estilizando a sec2 */
+       #sec2{
+        grid-template-columns:1fr;
+        gap: 5em;
+        margin: 1em;
+    }
+  
+    #tracks{
+      flex-direction: column;
+  }
+  
+    #tracks img{
+      margin-left: 4%;
+    }
+  
+      /* estilizando a sec3 */
+      #sec3{
+        grid-template-columns:1fr;
+        gap: 5em;
+        margin: 1rem;
+      }
+  
+      #karts{
+        flex-direction: column;
+      }
+  
+      #karts img{
+        margin-left: 4%;
+      }
+      
+      .kartdesc{
+        width: 100%;
+        height: 100%;
+      }
+  
+      table{
+        width: 100%;
+      }
+
+      #myModal div{
+        gap: 5em;
+        }
+  }
+
+  @media(min-width: 300px) and (max-width:350px){
+    main{
+      padding: 0;
+    }
+
+    #hero picture img{
+      width: 100%;
+    }
+
+    .track img{
+      width: 15em;
+      margin-right: 0.5em;
+    }
+
+    #karts img{
+      width: 15em;
+    }
+
+    table{
+      font-size: 0.7em;
+      width: 100%;
+    }
+  }

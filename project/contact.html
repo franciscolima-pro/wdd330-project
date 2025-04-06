@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Kartzone page">
+    <meta name="author" content="Francisco Lima">
+
+    <meta property="og:title" content="Project Kartzone page"> <!-- Título -->
+    <meta property="og:type" content="website"> <!-- Tipo (exemplo: 'website', 'article') -->
+    <meta property="og:image" content="https://franciscolima-pro.github.io/wdd231/project/images/logo1.webp"> <!-- URL completa da imagem -->
+    <meta property="og:url" content="https://franciscolima-pro.github.io/wdd231/project/index.html"> <!-- URL completa da página -->
+
+    <link rel="icon" href="images/logo1.webp" type="image/webp"> <!-- favicon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" type="module"></script>
+    <title>Project KartZone Contact Page</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo1.webp" alt="Rancing Flag logo"> 
+        </div>  
+        <nav> 
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" id="home"><b>Home</b></a></li>
+                <li><a href="events.html" id="events"><b>Events & Races</b></a></li>
+                <li><a href="#" id="contact"><b>Contact Us</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="sec1">
+            <div class="div1">
+                <h2>Localization</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.3524500649532!2d-49.27124942534312!3d-25.426477732750904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce41476c76e0d%3A0xdf42a51ecab42ec0!2sTv.%20Pres.%20Faria%2C%20400%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1739646027438!5m2!1spt-BR!2sbr" title="Address: Tv. Pres. Faria, 400, Curitiba." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="div2">
+                <h2>Send us a message</h2>
+                <form action="thanks.html" method="get">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required autocomplete="given-name">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required autocomplete="family-name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required autocomplete="email">
+
+                    <label for="userphone">Cell Phone</label>
+                    <input type="tel" name="userphone" id="userphone" pattern="\\d{3}\ \d{3}-\d{4}" placeholder="xxx xxx-xxxx" required autocomplete="tel">
+
+                    <label id="inquiry">Inquiry Type:</label>
+
+                    <label for="general">
+                        <input type="radio" id="general" name="subject" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="booking">
+                        <input type="radio" id="booking" name="subject">
+                        Booking Request
+                    </label>
+
+                    <label for="event">
+                        <input type="radio" id="event" name="subject">
+                        Event Information
+                    </label>
+
+                    <div class="divtarea">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+        <section id="sec2">
+            <div>
+                <img src="images/tel.webp" alt="Phone Image" loading="lazy">
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div>
+                <img src="images/email.webp" alt="Email Image" loading="lazy">
+                <p>contact@kartzone.com</p>
+            </div>
+            <div>
+                <img src="images/add.webp" alt=" Address Image" loading="lazy">
+                <p>Tv. Pres. Faria, 400, Curitiba.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer">
+            <b>&copy;<span id="currentYear"></span>| Francisco Lima | Brazil</b>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

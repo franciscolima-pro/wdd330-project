@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #e7750c;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+
+  header h1{
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav{
+    background-color: #e7750c;
+    padding: 1rem;
+    display: flex;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  nav a:hover{
+    color: white;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+/* Estilizando o main */
+h1, h2,#footer, nav a{
+    font-family: "Lancelot", serif;
+  }
+
+p{
+    font-family: "quicksand", serif;
+}
+
+h3{
+    font-family: "quicksand";
+}
+
+/* Estilizando o Main */
+main{
+    padding: 0rem 5rem;
+}
+
+main h1{
+    text-align: center;
+    margin: 5rem;
+}
+
+.sec1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div1 iframe{
+    width: 30em;
+    padding: 2em;
+    border-bottom-left-radius: 0.5em;
+    background-color: black;
+}
+
+.div1 h2{
+    border-top-right-radius: 0.5em;
+    padding-top: 1em;
+    background-color: black;
+    color: #e7750c;
+    text-align: center;
+}
+
+form #fname, #lname, #email, #message, #inquiry, button{
+    display: block;
+}
+
+form #fname, #lname, #userphone, #email{
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 0.6em;
+}
+
+.divtarea, button{
+    margin-top: 1em;
+    width: 100%;
+}
+
+#message{
+    resize: none;
+    width: 100%;
+    padding: 1em;
+}
+
+.div2 h2{
+    border-top-right-radius: 0.5em;
+    padding-top: 1em;
+    background-color: black;
+    color: #e7750c;
+    text-align: center;
+}
+
+form button{
+    padding: 1.2em;
+    transition: ease-in-out;
+    border: none;
+    background-color: #e7760ccf;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+
+form button:hover{
+    transform: scale(1.1);
+    background-color: #e7750c;
+}
+
+form{
+    width: 30em;
+    height: 30em;
+    padding: 2em;
+    color: #e7750c;
+    background-color: black;
+    border-bottom-left-radius: 0.5em;
+}
+
+form label{
+    font-family: 'roboto';
+}
+
+#results{
+    padding: 1em;
+}
+
+#results h1{
+    padding-left: 1em;
+}
+
+#results p{
+    background-color: #1E1D1D;
+    border-radius: 1em;
+    color: white;
+    margin: 1rem;
+    padding: 1em;
+}
+
+/* Estilizando a section 2 */
+#sec2{
+    margin: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5em;
+}
+
+/* Estilizando o footer */
+footer{
+    background-color: #e7750c;
+    padding: 2.1em;
+    text-align: center;
+  }
+  
+  footer #footer{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    font-size: large;
+    color: black;
+  }
+  
+  footer #lastModified{
+    color: black;
+  }
+
+  @media(min-width: 800px) and (max-width: 1200px){
+    main section{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div2 h2, .div1 h2{
+      width: 27.4em;
+    }
+
+    form{
+      width: 41.1em;
+    }
+
+    .div1 iframe{
+      width: 41.1em;
+  }
+
+  }
+
+  @media(min-width: 300px) and (max-width:800px){
+    header{
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav{
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 1em;
+  } 
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+  } 
+
+  .nav-links.active{
+    display: flex;
+  } 
+
+    .nav-links {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+  }  
+
+  .nav-links a{
+    font-size: 1.2em;
+  }
+
+  main section{
+    padding: 0em 5em 0em 8.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+
+  .div1 iframe{
+    width: 21em;
+}
+
+#sec{
+  margin: 1em;
+}
+
+form{
+  width: 21em;
+  height: 31em;
+}
+
+#sec2{
+  margin: 0;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+} 
+
+@media(min-width: 300px) and (max-width:350px){
+  .div1 iframe{
+    width: 18em;
+}
+
+
+main section{
+  padding: 0em 5em 0em 4.5em;
+}
+
+}
+
+@media(min-width: 380px) and (max-width:400px){
+  .div1 iframe{
+    width: 21em;
+}
+main section{
+  padding: 0em 5em 0em 7em;
+}
+
+}
+
