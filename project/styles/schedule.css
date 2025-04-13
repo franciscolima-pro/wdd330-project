@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #e7750c;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+
+  header h1{
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav{
+    background-color: #e7750c;
+    padding: 1rem;
+    display: flex;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  nav a:hover{
+    color: white;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+  }
+/* Estilizando o Main: */
+h1, h2,#footer, nav a{
+    font-family: "Lancelot", serif;
+  }
+
+p, td{
+    font-family: "quicksand", serif;
+}
+
+main h1{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h3{
+    font-family: "quicksand";
+}
+
+.raceschedule{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.eventDiv{
+    margin: 2rem;
+    padding: 1em;
+    border-radius: 0.4em;
+    color: #e7750c;
+    border-top: 0.5em solid #e7750c;
+    background-color: black;
+}
+
+.eventDiv p{
+    background-color: #e7750c;
+    color: black;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    
+}
+/* Estilizando o Main Fim: */
+
+/* Estilizando o footer */
+footer{
+    background-color: #e7750c;
+    padding: 2.1em;
+    text-align: center;
+  }
+  
+  footer #footer{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    font-size: large;
+    color: black;
+  }
+  
+  footer #lastModified{
+    color: black;
+  }
+
+  @media(min-width: 800px) and (max-width: 1200px){
+
+  }
+
+  @media(min-width: 300px) and (max-width:800px){
+    header{
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav{
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 1em;
+  } 
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+  } 
+
+  .nav-links.active{
+    display: flex;
+  } 
+
+    .nav-links {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+  }  
+
+  .nav-links a{
+    font-size: 1.2em;
+  }
+  
+  }

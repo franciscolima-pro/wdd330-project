@@ -59,6 +59,137 @@ h3{
     font-family: "quicksand";
 }
 
+.actionSignup
+{
+    display: flex;
+    justify-content: right;
+    margin: 2em 6em;
+}
+
+.actionSignup button{
+  background-color: black;
+
+  color: #e7750c;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.actionSignup button:hover{
+    background-color: #e7750c;
+    color: black;
+    transition: all 0.3s ease-in-out;
+} 
+
+.contactLink{
+  display: flex;
+  justify-content: right;
+  margin: 2em 6em;
+}
+
+.contactLink a:hover{
+    color: #e7750c;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactLink a{
+    color: black;
+    font-family: "quicksand", serif;
+    font-weight: bold;
+}
+
+
+/* Estilizando form dialog */
+dialog {
+  left: 40%;
+  top: 10%;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5); /* fundo escurecido */
+  backdrop-filter: blur(2px);     /* leve desfoque opcional */
+}
+
+ form {
+    max-width: 420px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+
+  form h2{
+    margin-bottom: 1em;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  form span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.4rem;
+  }
+
+  form input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.6rem;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+  }
+
+  form input:focus {
+    border-color: #e7750c;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  }
+
+  form .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  form button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  form .submit-btn {
+    background-color: #27ae60;
+    color: white;
+  }
+
+  form .submit-btn:hover {
+    background-color: #219150;
+  }
+
+  form .cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+
+  form .cancel-btn:hover {
+    background-color: #c0392b;
+  }
+
 /* Estilizando o Main */
 main section{
     display: flex;
