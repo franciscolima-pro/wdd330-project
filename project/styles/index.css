@@ -95,6 +95,19 @@ main #hero{
     background-color: white;
     border-radius: 0.8em;
     color: black;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #e7750c;
+    color: black;
+  }
 }
 
 #hero div p{
